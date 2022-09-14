@@ -8,7 +8,7 @@ dogTypeRoute.get('/', function (req, res){
     payload: dogType
 };
 
-res.json(dogtypeObject);
+res.json(dogTypeObject);
 })
 
 
@@ -36,7 +36,7 @@ dogTypeRoute.get("/:id", function(req, res) {
    
         const body = req.body;
                                 
-        superLeague.push(body);
+        dogType.push(body);
         const responseUpdated = {
             success: true,
             data: dogType,
@@ -56,12 +56,12 @@ dogTypeRoute.get("/:id", function(req, res) {
             }
         }
 
-        const replacedogtype = {
+        const replacedogType = {
             success: true,
             payload: body,
         }
 
-        res.json(replacedogtype);
+        res.json(replacedogType);
 
     })
 
