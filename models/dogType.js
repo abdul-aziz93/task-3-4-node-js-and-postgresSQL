@@ -1,4 +1,4 @@
-import users from "../libs/dogType.js";
+import dogType from "../libs/dogType.js";
 
 // GET ALL USERS
 export function getUsers() {}

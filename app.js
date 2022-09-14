@@ -1,6 +1,7 @@
 import express from "express";
 import dogType from "./libs/dogType.js";
 import dogTypeRoute from './routes/dogType.js';
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -8,9 +9,9 @@ app.listen(PORT, function () {
     console.log(`Server listening on port: ${PORT}`);
   });
   
-  const dogTypeRoute = express.Router();
+  //const dogTypeRoute = express.Router();
   
-  app.use('/dogType', catsRoute);
+  app.use('/dogType', dogTypeRoute);
   
   /*dogTypeRoute.get('/', function (req, res){
       const dogTyeObject = {

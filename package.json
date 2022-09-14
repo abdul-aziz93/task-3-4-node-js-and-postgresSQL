@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "type":"module",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon -r dotenv/config app.js",
+    "db:createDogTypeTable": "node -r dotenv/config ./db/scripts/createDogTypeTable.js",
+    "db:populateDogTypeTable": "node -r dotenv/config ./db/scripts/populateDogTypeTable.js"
   },
   "repository": {
     "type": "git",
