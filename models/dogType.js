@@ -14,3 +14,5 @@ export function updateUserByID(id, updatedUser) {}
 
 // DELETE A USER BY ID
 export function deleteUserByID(id) {}
+
+export default dogType;
