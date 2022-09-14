@@ -1,5 +1,6 @@
 import express from 'express';
 import dogType from '../libs/dogType.js';
+
 const dogTypeRoute = express.Router();
 
 dogTypeRoute.get('/', function (req, res){
@@ -19,7 +20,8 @@ dogTypeRoute.get("/:id", function(req, res) {
      for(var i = 0; i < dogType.length; i++){
             if(dogTypeID == dogType[i].id){
                 searchResult = dogType[i];
-                break;
+               console.log(searchResult); 
+               //break;
             }
         }
 

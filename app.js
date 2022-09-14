@@ -13,16 +13,6 @@ app.listen(PORT, function () {
   
   app.use('/dogType', dogTypeRoute);
   
-  /*dogTypeRoute.get('/', function (req, res){
-      const dogTyeObject = {
-      success: Boolean, 
-      payload: dogType
-  };
-  
-  res.json(dogTypeObject);
-  })*/
-  
-  
   dogTypeRoute.get("/:id", function(req, res) {
       const dogTypeID = req.params.id;
       let searchResult = [];
